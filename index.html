@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[NOMBRE] [APELLIDO] — Terapeuta Ocupacional</title>
-  <meta name="description" content="Terapeuta Ocupacional con más de 4 años de experiencia. Atención a domicilio en pediatría, adulto mayor, asesoría escolar y ergonomía laboral.">
+  <title>Miriel Nesvadba Comelin — Terapeuta Ocupacional</title>
+  <meta name="description"
+    content="Terapeuta Ocupacional especializada en modelo MOHO, Integración Sensorial, Adulto Mayor e Inclusión Laboral. Atención a domicilio en Santiago, Chile.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -25,19 +27,22 @@
   </script>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="font-sans bg-[#f8fafc] text-[#1e293b]">
 
   <!-- NAVEGACIÓN -->
   <header class="sticky top-0 z-50 bg-white shadow-sm">
     <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4" aria-label="Navegación principal">
 
-      <a href="#inicio" class="text-base font-bold text-primary shrink-0">[NOMBRE] [APELLIDO]</a>
+      <a href="#inicio" class="text-base font-bold text-primary shrink-0">Miriel Nesvadba Comelin</a>
 
       <!-- Menú desktop -->
       <ul class="hidden md:flex gap-6 text-sm font-medium" role="list">
         <li><a href="#sobre-mi" class="hover:text-primary transition-colors">Sobre mí</a></li>
         <li><a href="#servicios" class="hover:text-primary transition-colors">Servicios</a></li>
-        <li><a href="#testimonios" class="hover:text-primary transition-colors">Testimonios</a></li>
+        <li><a href="Curriculum%20Profesional%20-%20Miriel%20Nesvadba%20Comelin.pdf" target="_blank"
+            rel="noopener noreferrer" class="hover:text-primary transition-colors">Currículum</a></li>
+        <li><a href="#formacion" class="hover:text-primary transition-colors">Formación</a></li>
         <li><a href="#contacto" class="hover:text-primary transition-colors">Contacto</a></li>
       </ul>
 
@@ -52,20 +57,27 @@
             class="w-8 h-8 rounded border border-gray-300 hover:bg-gray-100 flex items-center justify-center text-xs font-bold transition-colors focus:outline-none focus:ring-2 focus:ring-primary">
             A+
           </button>
-          <button id="btn-contrast" onclick="toggleContrast()" aria-label="Activar modo alto contraste" aria-pressed="false"
-            class="w-8 h-8 rounded border border-gray-300 hover:bg-gray-100 flex items-center justify-center transition-colors focus:outline-none focus:ring-2 focus:ring-primary" title="Alto contraste">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <circle cx="12" cy="12" r="10"/>
-              <path d="M12 2a10 10 0 000 20z" fill="currentColor" stroke="none"/>
+          <button id="btn-contrast" onclick="toggleContrast()" aria-label="Activar modo alto contraste"
+            aria-pressed="false"
+            class="w-8 h-8 rounded border border-gray-300 hover:bg-gray-100 flex items-center justify-center transition-colors focus:outline-none focus:ring-2 focus:ring-primary"
+            title="Alto contraste">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 2a10 10 0 000 20z" fill="currentColor" stroke="none" />
             </svg>
           </button>
         </div>
 
         <!-- Hamburguesa (solo mobile) -->
-        <button id="btn-menu" onclick="toggleMenu()" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobile-menu"
+        <button id="btn-menu" onclick="toggleMenu()" aria-label="Abrir menú de navegación" aria-expanded="false"
+          aria-controls="mobile-menu"
           class="md:hidden w-8 h-8 rounded border border-gray-300 hover:bg-gray-100 flex items-center justify-center transition-colors focus:outline-none focus:ring-2 focus:ring-primary">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
           </svg>
         </button>
       </div>
@@ -74,10 +86,17 @@
     <!-- Menú mobile -->
     <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white px-4 py-3">
       <ul class="flex flex-col gap-3 text-sm font-medium" role="list">
-        <li><a href="#sobre-mi" onclick="closeMenu()" class="block py-1 hover:text-primary transition-colors">Sobre mí</a></li>
-        <li><a href="#servicios" onclick="closeMenu()" class="block py-1 hover:text-primary transition-colors">Servicios</a></li>
-        <li><a href="#testimonios" onclick="closeMenu()" class="block py-1 hover:text-primary transition-colors">Testimonios</a></li>
-        <li><a href="#contacto" onclick="closeMenu()" class="block py-1 hover:text-primary transition-colors">Contacto</a></li>
+        <li><a href="#sobre-mi" onclick="closeMenu()" class="block py-1 hover:text-primary transition-colors">Sobre
+            mí</a></li>
+        <li><a href="#servicios" onclick="closeMenu()"
+            class="block py-1 hover:text-primary transition-colors">Servicios</a></li>
+        <li><a href="Curriculum%20Profesional%20-%20Miriel%20Nesvadba%20Comelin.pdf" target="_blank"
+            rel="noopener noreferrer" onclick="closeMenu()"
+            class="block py-1 hover:text-primary transition-colors">Currículum</a></li>
+        <li><a href="#formacion" onclick="closeMenu()"
+            class="block py-1 hover:text-primary transition-colors">Formación</a></li>
+        <li><a href="#contacto" onclick="closeMenu()"
+            class="block py-1 hover:text-primary transition-colors">Contacto</a></li>
       </ul>
     </div>
   </header>
@@ -95,26 +114,26 @@
             Terapia Ocupacional a domicilio para mejorar tu <span class="text-primary">calidad de vida</span>
           </h1>
           <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-            Más de 4 años acompañando a niños, adultos mayores, instituciones educativas y empresas. Intervención directa en tu entorno real, con un enfoque centrado en ti y tu familia.
+            Más de 4 años acompañando a niños, adultos mayores y personas con discapacidad cognitiva. Intervención
+            directa en tu entorno, con enfoque centrado en ti, el modelo MOHO y la evidencia.
           </p>
-          <a href="https://wa.me/[TELEFONO]?text=Hola%20[NOMBRE],%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20para%20agendar%20una%20hora."
-            target="_blank"
-            rel="noopener noreferrer"
+          <a href="https://wa.me/56989280593?text=Hola%20Miriel,%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20para%20agendar%20una%20hora."
+            target="_blank" rel="noopener noreferrer"
             class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-4 rounded-xl text-base transition-colors focus:outline-none focus:ring-4 focus:ring-green-300"
             aria-label="Agendar evaluación inicial por WhatsApp (abre WhatsApp)">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="currentColor"
+              aria-hidden="true">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
             </svg>
             Agendar Evaluación Inicial
           </a>
         </div>
 
-        <!-- Placeholder foto profesional -->
+        <!-- Foto profesional -->
         <div class="flex justify-center">
-          <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-blue-100 border-4 border-blue-200 flex items-center justify-center shadow-lg"
-            role="img" aria-label="Foto de [NOMBRE] [APELLIDO], Terapeuta Ocupacional">
-            <span class="text-8xl font-bold text-primary select-none" aria-hidden="true">[N]</span>
-          </div>
+          <img src="img/foto.png" alt="Foto de Miriel Nesvadba Comelin, Terapeuta Ocupacional"
+            class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-blue-200 shadow-lg">
         </div>
       </div>
     </section>
@@ -127,15 +146,47 @@
 
         <div class="space-y-6 text-gray-600 text-lg leading-relaxed">
           <p>
-            Soy <strong class="text-[#1e293b]">[NOMBRE] [APELLIDO]</strong>, Terapeuta Ocupacional con más de <strong class="text-[#1e293b]">4 años de experiencia</strong> trabajando junto a niños, adultos mayores, instituciones educativas y empresas. Mi trabajo consiste en ayudar a las personas a recuperar, mantener o mejorar las actividades que dan sentido a su vida cotidiana.
+            Soy <strong class="text-[#1e293b]">Miriel Nesvadba Comelin</strong>, Terapeuta Ocupacional Licenciada en
+            Ciencias de la Ocupación con Mención en Rehabilitación Psicosocial por la <strong
+              class="text-[#1e293b]">Universidad de los Andes</strong>. Especializada en el <strong
+              class="text-[#1e293b]">modelo MOHO</strong>, mi enfoque está en la intervención inter y multidisciplinaria
+            para mejorar la calidad de vida de quienes atiendo.
           </p>
           <p>
-            Creo en un <strong class="text-[#1e293b]">enfoque centrado en la familia y la comunidad</strong>. Por eso, mis intervenciones ocurren en el entorno real de cada persona: el hogar, el colegio o el lugar de trabajo. No se trata solo de tratar a un individuo, sino de transformar su contexto para que pueda desenvolverse con autonomía y confianza.
+            Certificada como <strong class="text-[#1e293b]">Gestora de Inclusión Laboral</strong> y con formación
+            especializada en <strong class="text-[#1e293b]">Integración Sensorial</strong>, Condición del Espectro
+            Autista y ADOS-2. Trabajo activamente en la promoción de entornos equitativos y accesibles, con soluciones
+            innovadoras y un acompañamiento cercano y respetuoso.
           </p>
           <p>
-            Cuento con especialización en <strong class="text-[#1e293b]">Integración Sensorial</strong>, lo que me permite abordar dificultades del procesamiento sensorial en niños de manera técnica, lúdica y efectiva, con herramientas validadas por la evidencia.
+            Mi trabajo ocurre en el entorno real de cada persona: el hogar, el taller de trabajo o la equinoterapia.
+            Creo en intervenciones que transforman el contexto para que cada persona se desenvuelva con <strong
+              class="text-[#1e293b]">autonomía y confianza</strong>.
           </p>
         </div>
+
+        <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-3 mt-8 text-sm text-gray-600" aria-label="Valores profesionales">
+          <li class="flex items-start gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-primary shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Empatía y capacidad de escucha activa
+          </li>
+          <li class="flex items-start gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-primary shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Alta ética profesional y compromiso laboral
+          </li>
+          <li class="flex items-start gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-primary shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Creatividad para estrategias terapéuticas innovadoras
+          </li>
+          <li class="flex items-start gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-primary shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Resolución de problemas de manera eficiente
+          </li>
+          <li class="flex items-start gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-primary shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Trabajo en equipo y colaboración multidisciplinaria
+          </li>
+        </ul>
 
         <div class="grid sm:grid-cols-3 gap-6 mt-12">
           <div class="text-center p-4">
@@ -143,13 +194,46 @@
             <p class="text-sm text-gray-500 font-medium">años de experiencia</p>
           </div>
           <div class="text-center p-4">
-            <p class="text-4xl font-bold text-primary mb-1">4</p>
-            <p class="text-sm text-gray-500 font-medium">áreas de especialización</p>
-          </div>
-          <div class="text-center p-4">
             <p class="text-4xl font-bold text-primary mb-1">100%</p>
             <p class="text-sm text-gray-500 font-medium">atención a domicilio</p>
           </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-2 mt-10" aria-label="Especialidades">
+          <span class="inline-block text-sm font-medium bg-blue-50 text-primary border border-blue-100 rounded-full px-4 py-1.5">Modelo MOHO</span>
+          <span class="inline-block text-sm font-medium bg-blue-50 text-primary border border-blue-100 rounded-full px-4 py-1.5">Integración Sensorial</span>
+          <span class="inline-block text-sm font-medium bg-blue-50 text-primary border border-blue-100 rounded-full px-4 py-1.5">Selectividad Alimentaria</span>
+          <span class="inline-block text-sm font-medium bg-blue-50 text-primary border border-blue-100 rounded-full px-4 py-1.5">Neurodivergencia / TEA</span>
+          <span class="inline-block text-sm font-medium bg-blue-50 text-primary border border-blue-100 rounded-full px-4 py-1.5">Desarrollo de Habilidades Escolares</span>
+          <span class="inline-block text-sm font-medium bg-blue-50 text-primary border border-blue-100 rounded-full px-4 py-1.5">Estimulación Física-Cognitiva</span>
+          <span class="inline-block text-sm font-medium bg-blue-50 text-primary border border-blue-100 rounded-full px-4 py-1.5">Rutina Equilibrada</span>
+          <span class="inline-block text-sm font-medium bg-blue-50 text-primary border border-blue-100 rounded-full px-4 py-1.5">Gestora de Inclusión Laboral</span>
+          <span class="inline-block text-sm font-medium bg-blue-50 text-primary border border-blue-100 rounded-full px-4 py-1.5">Infancia</span>
+          <span class="inline-block text-sm font-medium bg-blue-50 text-primary border border-blue-100 rounded-full px-4 py-1.5">Adulto Mayor</span>
+          <span class="inline-block text-sm font-medium bg-blue-50 text-primary border border-blue-100 rounded-full px-4 py-1.5">Inglés profesional</span>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6">
+          <a href="Curriculum%20Profesional%20-%20Miriel%20Nesvadba%20Comelin.pdf" target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-3 rounded-xl transition-colors focus:outline-none focus:ring-4 focus:ring-blue-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+            </svg>
+            Ver Currículum
+          </a>
+          <a href="Curriculum%20Profesional%20-%20Miriel%20Nesvadba%20Comelin.pdf" download
+            class="inline-flex items-center gap-2 border-2 border-primary text-primary hover:bg-blue-50 font-semibold px-6 py-3 rounded-xl transition-colors focus:outline-none focus:ring-4 focus:ring-blue-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Descargar Currículum
+          </a>
         </div>
       </div>
     </section>
@@ -159,60 +243,91 @@
       <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-3">Servicios</h2>
         <div class="w-16 h-1 bg-primary mx-auto mb-4 rounded" aria-hidden="true"></div>
-        <p class="text-center text-gray-500 mb-12">Intervención profesional adaptada a cada etapa de la vida y contexto</p>
+        <p class="text-center text-gray-500 mb-12">Intervención profesional adaptada a cada etapa de la vida y contexto
+        </p>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
           <article class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
             <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
               </svg>
             </div>
-            <h3 class="font-bold text-base mb-3">Terapia Ocupacional Infantil</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Evaluación e intervención en dificultades del desarrollo y procesamiento sensorial. Especialización en Integración Sensorial para apoyar el desempeño en el juego, el aprendizaje y la vida diaria.</p>
+            <h3 class="font-bold text-base mb-3">Terapia Infantil</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Evaluación e intervención en dificultades del desarrollo,
+              procesamiento sensorial, selectividad alimentaria y neurodivergencia. Especialización en Integración
+              Sensorial y TEA para apoyar el juego, el aprendizaje y la vida diaria.</p>
+            <div class="mt-4 pt-3 border-t border-blue-100 flex items-baseline gap-1.5">
+              <span class="text-primary font-bold text-base shrink-0">100%</span>
+              <span class="text-gray-400 text-xs">de niños atendidos desarrollaron habilidades preescolares esenciales</span>
+            </div>
           </article>
 
           <article class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
             <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
-                <polyline points="9,22 9,12 15,12 15,22"/>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                <polyline points="9,22 9,12 15,12 15,22" />
               </svg>
             </div>
             <h3 class="font-bold text-base mb-3">Autonomía en el Adulto Mayor</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Estrategias para mantener la independencia, movilidad y seguridad en las actividades de la vida diaria. Adaptaciones del hogar y apoyo activo a los cuidadores familiares.</p>
+            <p class="text-gray-500 text-sm leading-relaxed">Estimulación cognitiva y motora para la mantención de
+              funciones. Estrategias de autonomía, adaptaciones del entorno y apoyo activo a los cuidadores familiares.
+            </p>
+            <div class="mt-4 pt-3 border-t border-blue-100 flex items-baseline gap-1.5">
+              <span class="text-primary font-bold text-base shrink-0">30%</span>
+              <span class="text-gray-400 text-xs">de mejora en preservación de habilidades cognitivas funcionales</span>
+            </div>
           </article>
 
           <article class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
             <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" />
+                <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
+                <line x1="12" y1="12" x2="12" y2="16" />
+                <line x1="10" y1="14" x2="14" y2="14" />
               </svg>
             </div>
-            <h3 class="font-bold text-base mb-3">Asesoría y Consultoría Escolar</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Apoyo a escuelas e instituciones educativas para la inclusión escolar. Orientación en adaptaciones curriculares, ambientales y estrategias para la diversidad en el aula.</p>
+            <h3 class="font-bold text-base mb-3">Inclusión Laboral</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Intervención en talleres de trabajo protegido para adultos
+              con discapacidad cognitiva. Diseño de metodologías adaptadas para maximizar la participación, autonomía y
+              desarrollo de habilidades laborales.</p>
+            <div class="mt-4 pt-3 border-t border-blue-100 flex items-baseline gap-1.5">
+              <span class="text-primary font-bold text-base shrink-0">70%</span>
+              <span class="text-gray-400 text-xs">del proceso de manufactura realizado de forma independiente</span>
+            </div>
           </article>
 
           <article class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100">
             <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="3" width="20" height="14" rx="2"/>
-                <path d="M8 21h8M12 17v4"/>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
               </svg>
             </div>
-            <h3 class="font-bold text-base mb-3">Ergonomía y Salud Laboral</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">Evaluación de puestos de trabajo y asesorías para empresas. Prevención de lesiones musculoesqueléticas, pausas activas y adaptación del ambiente laboral a las personas.</p>
+            <h3 class="font-bold text-base mb-3">Equinoterapia</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">Intervención terapéutica utilizando el movimiento del
+              caballo para mejorar el control postural, equilibrio, coordinación motriz y autorregulación emocional en
+              niños.</p>
+            <div class="mt-4 pt-3 border-t border-blue-100 flex items-baseline gap-1.5">
+              <span class="text-primary font-bold text-base shrink-0">60%</span>
+              <span class="text-gray-400 text-xs">de mejora en tolerancia sensorial y atención sostenida</span>
+            </div>
           </article>
 
         </div>
       </div>
     </section>
 
-    <!-- TESTIMONIOS -->
+    <!-- TESTIMONIOS: oculto temporalmente, reemplazar con reseñas reales -->
+    <!--
     <section id="testimonios" class="py-20 bg-white">
       <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-3">Lo que dicen quienes me conocen</h2>
@@ -271,27 +386,98 @@
         </div>
       </div>
     </section>
+    -->
+
+    <!-- FORMACIÓN -->
+    <section id="formacion" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-3">Formación</h2>
+        <div class="w-16 h-1 bg-primary mx-auto mb-12 rounded" aria-hidden="true"></div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+          <!-- Educación universitaria -->
+          <div class="bg-[#f8fafc] rounded-2xl p-6 border border-gray-100">
+            <div class="flex items-center gap-3 mb-5">
+              <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center shrink-0" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+              </div>
+              <h3 class="font-bold text-base">Educación</h3>
+            </div>
+            <div class="border-l-2 border-blue-200 pl-4">
+              <p class="font-semibold text-sm text-[#1e293b]">Universidad de los Andes</p>
+              <p class="text-sm text-gray-600 mt-0.5">Terapeuta Ocupacional Licenciada en Ciencias de la Ocupación, Mención en Rehabilitación Psicosocial</p>
+              <p class="text-xs text-gray-400 mt-1">Mar 2014 – Sep 2021 · Nota 5,7</p>
+            </div>
+          </div>
+
+          <!-- Formación continua -->
+          <div class="bg-[#f8fafc] rounded-2xl p-6 border border-gray-100">
+            <div class="flex items-center gap-3 mb-5">
+              <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center shrink-0" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                </svg>
+              </div>
+              <h3 class="font-bold text-base">Formación Continua</h3>
+            </div>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-2 text-sm text-gray-600">
+                <span class="text-primary font-bold shrink-0 text-xs mt-0.5">2025</span>
+                <span>Acreditación Oficial ADOS-2 — certificación PhD Noha Minshawi-Patterson, acreditada por WPS California / ADIPA</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm text-gray-600">
+                <span class="text-primary font-bold shrink-0 text-xs mt-0.5">2025</span>
+                <span>Gestora de Inclusión Laboral — OTEC Invierte Capacitación, acreditación ChileValora</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm text-gray-600">
+                <span class="text-primary font-bold shrink-0 text-xs mt-0.5">2025</span>
+                <span>Terapia Ocupacional en Rechazo y Selectividad Alimentaria en Niños y Niñas (8ª versión)</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm text-gray-600">
+                <span class="text-primary font-bold shrink-0 text-xs mt-0.5">2025</span>
+                <span>Taller de Metodología Aplicada a los Servicios Terapéuticos con Caballos — COLMENA</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm text-gray-600">
+                <span class="text-primary font-bold shrink-0 text-xs mt-0.5">2024</span>
+                <span>Diplomado en Condición del Espectro Autista — DiversifK-T (5ª versión)</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <!-- CONTACTO / CTA -->
     <section id="contacto" class="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
       <div class="max-w-3xl mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold mb-4">¿Listo para dar el primer paso?</h2>
         <p class="text-blue-100 text-lg mb-10 leading-relaxed">
-          Escríbeme directamente por WhatsApp. Te respondo a la brevedad y coordinamos una evaluación inicial en tu entorno.
+          Escríbeme directamente por WhatsApp. Te respondo a la brevedad y coordinamos una evaluación inicial en tu
+          entorno.
         </p>
-        <a href="https://wa.me/[TELEFONO]?text=Hola%20[NOMBRE],%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20para%20agendar%20una%20hora."
-          target="_blank"
-          rel="noopener noreferrer"
+        <a href="https://wa.me/56989280593?text=Hola%20Miriel,%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20para%20agendar%20una%20hora."
+          target="_blank" rel="noopener noreferrer"
           class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-400 text-white font-semibold px-8 py-4 rounded-xl text-lg transition-colors focus:outline-none focus:ring-4 focus:ring-green-300"
           aria-label="Contactar por WhatsApp para agendar una hora (abre WhatsApp)">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="currentColor"
+            aria-hidden="true">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
           </svg>
           Escribir por WhatsApp
         </a>
         <p class="text-blue-200 text-sm mt-6">
           También puedes escribirme a
-          <a href="mailto:[EMAIL]" class="underline hover:text-white transition-colors">[EMAIL]</a>
+          <a href="mailto:mnesvadba@miuandes.cl"
+            class="underline hover:text-white transition-colors">mnesvadba@miuandes.cl</a>
         </p>
       </div>
     </section>
@@ -303,57 +489,43 @@
     <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
 
       <div class="text-center md:text-left">
-        <p class="font-bold text-white text-base">[NOMBRE] [APELLIDO]</p>
+        <p class="font-bold text-white text-base">Miriel Nesvadba Comelin</p>
         <p class="text-sm text-gray-400">Terapeuta Ocupacional</p>
       </div>
 
       <nav aria-label="Redes sociales">
         <ul class="flex gap-3" role="list">
           <li>
-            <a href="#" class="w-10 h-10 rounded-full bg-gray-700 hover:bg-primary flex items-center justify-center transition-colors focus:outline-none focus:ring-2 focus:ring-primary"
-              aria-label="Perfil de Instagram de [NOMBRE] [APELLIDO]">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                <circle cx="12" cy="12" r="4"/>
-                <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+            <a href="https://www.linkedin.com/in/miriel-nesvadba-comelin" target="_blank" rel="noopener noreferrer"
+              class="w-10 h-10 rounded-full bg-gray-700 hover:bg-primary flex items-center justify-center transition-colors focus:outline-none focus:ring-2 focus:ring-primary"
+              aria-label="Perfil de LinkedIn de Miriel Nesvadba Comelin (abre LinkedIn)">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                <circle cx="4" cy="4" r="2" />
               </svg>
             </a>
           </li>
           <li>
-            <a href="#" class="w-10 h-10 rounded-full bg-gray-700 hover:bg-primary flex items-center justify-center transition-colors focus:outline-none focus:ring-2 focus:ring-primary"
-              aria-label="Página de Facebook de [NOMBRE] [APELLIDO]">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="w-10 h-10 rounded-full bg-gray-700 hover:bg-primary flex items-center justify-center transition-colors focus:outline-none focus:ring-2 focus:ring-primary"
-              aria-label="Perfil de LinkedIn de [NOMBRE] [APELLIDO]">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
-                <circle cx="4" cy="4" r="2"/>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://wa.me/[TELEFONO]?text=Hola%20[NOMBRE],%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20para%20agendar%20una%20hora."
-              target="_blank"
-              rel="noopener noreferrer"
+            <a href="https://wa.me/56989280593?text=Hola%20Miriel,%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20para%20agendar%20una%20hora."
+              target="_blank" rel="noopener noreferrer"
               class="w-10 h-10 rounded-full bg-gray-700 hover:bg-green-500 flex items-center justify-center transition-colors focus:outline-none focus:ring-2 focus:ring-green-400"
-              aria-label="WhatsApp de [NOMBRE] [APELLIDO] (abre WhatsApp)">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              aria-label="WhatsApp de Miriel Nesvadba Comelin (abre WhatsApp)">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
               </svg>
             </a>
           </li>
         </ul>
       </nav>
 
-      <p class="text-xs text-gray-500">© 2025 [NOMBRE] [APELLIDO]. Todos los derechos reservados.</p>
+      <p class="text-xs text-gray-500">© 2025 Miriel Nesvadba Comelin. Todos los derechos reservados.</p>
     </div>
   </footer>
 
   <script src="app.js"></script>
 </body>
+
 </html>
