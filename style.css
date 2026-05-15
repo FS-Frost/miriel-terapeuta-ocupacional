@@ -1,0 +1,64 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================================
+   MODO ALTO CONTRASTE
+   Activa la clase .high-contrast en <body>
+   ============================================ */
+
+.high-contrast,
+.high-contrast * {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+  box-shadow: none !important;
+  text-decoration-color: #ffff00 !important;
+}
+
+/* Elementos interactivos: amarillo para destacar */
+.high-contrast a,
+.high-contrast button,
+.high-contrast [role="button"] {
+  color: #ffff00 !important;
+  outline-color: #ffff00 !important;
+}
+
+/* SVG que usan stroke o fill heredados */
+.high-contrast svg {
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* Imágenes: reducir opacidad para no confundir */
+.high-contrast img {
+  opacity: 0.85 !important;
+  filter: grayscale(100%) contrast(1.2) !important;
+}
+
+/* Foco visible: reforzar en alto contraste */
+.high-contrast *:focus {
+  outline: 3px solid #ffff00 !important;
+  outline-offset: 2px !important;
+}
+
+/* Gradientes: reemplazar por negro plano */
+.high-contrast [class*="from-"],
+.high-contrast [class*="to-"],
+.high-contrast [class*="bg-gradient"] {
+  background-image: none !important;
+}
+
+/* Indicador visual del botón de contraste cuando está activo */
+#btn-contrast[aria-pressed="true"] {
+  background-color: #1e293b;
+  color: #fff;
+  border-color: #1e293b;
+}
+
+/* Botones de fuente: deshabilitar visualmente cuando llegan al límite */
+#btn-decrease[disabled],
+#btn-increase[disabled] {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
